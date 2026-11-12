@@ -1,0 +1,58 @@
+/* Plain, late-90s academic homepage. Edit freely. */
+html { background: #fff; }
+body {
+  max-width: 680px;
+  margin: 32px auto 48px;
+  padding: 0 16px;
+  font-family: "Times New Roman", Times, Georgia, serif;
+  font-size: 17px;
+  line-height: 1.45;
+  color: #000;
+  background: #fff;
+}
+a         { color: #0000ee; }
+a:visited { color: #551a8b; }
+a:hover   { background: #ffff99; }
+
+h1 { font-size: 30px; font-weight: normal; margin: 0 0 4px; }
+h2 { font-size: 20px; margin: 18px 0 8px; }
+h3.sec { font-size: 18px; font-style: italic; font-weight: normal; margin: 20px 0 4px; }
+h4.yr { font-size: 16px; font-weight: bold; margin: 14px 0 4px;
+        font-family: "Courier New", Courier, monospace; }
+hr { border: 0; border-top: 1px solid #999; margin: 22px 0; }
+
+.top { border-collapse: collapse; }
+.top td { vertical-align: top; padding: 0; }
+.photo-cell { padding-right: 20px !important; }
+.photo { width: 130px; height: 160px; border: 1px solid #000; display: block; object-fit: cover; }
+.placeholder { background: #eee; font: 12px "Courier New", monospace; color: #000;
+               display: flex; align-items: center; justify-content: center; }
+.sub   { margin: 0 0 10px; }
+.links { margin: 0; font-family: "Courier New", Courier, monospace; font-size: 15px; }
+.small { font-size: 14px; color: #000; }
+.todo  { background: #ffffcc; }
+
+.news { border-collapse: collapse; }
+.news td { padding: 3px 0; vertical-align: top; }
+.news td.date { padding-right: 32px; }
+.news .date { white-space: nowrap; font-family: "Courier New", monospace; font-size: 15px; }
+
+ol.pubs { padding-left: 22px; margin: 0; }
+ol.pubs li { margin-bottom: 26px; }
+.ptitle { font-weight: bold; font-size: 18px; }
+.cites  { font-size: 14px; color: #000; }
+.plinks { font-family: "Courier New", monospace; font-size: 14px; }
+details { font-size: 15px; }
+summary { cursor: pointer; color: #0000ee; font-family: "Courier New", monospace;
+          font-size: 14px; list-style: none; display: inline-block; }
+summary::-webkit-details-marker { display: none; }
+summary::before { content: "[+] "; }
+details[open] summary::before { content: "[-] "; }
+details p { margin: 6px 0 0; padding: 6px 10px; border-left: 2px solid #ccc; }
+
+.footer { font-size: 13px; color: #000; text-align: center; }
+
+@media (max-width: 480px) {
+  .top td { display: block; }
+  .photo-cell { padding: 0 0 12px 0 !important; }
+}
